@@ -29,7 +29,7 @@ export const COMMENTS =
         campsiteId: 0,
         rating: 5, 
         text: "A wonderful place to reconnect with nature.",
-        author: "Jordan Runn",
+        author: "Jordan Runner",
         date: "2019-08-04T20:11Z"
     },
     {
@@ -37,7 +37,7 @@ export const COMMENTS =
         campsiteId: 0,
         rating: 4, 
         text: "The stars at night were a revelation!",
-        author: "Ann Dabramov",
+        author: "Anna Dabramov",
         date: "2018-07-23T19:44Z"
     },
     {
