@@ -10,7 +10,6 @@ import {
   Modal,
   ModalHeader,
   ModalBody,
-  Input,
   Label,
 } from "reactstrap";
 import { Link } from "react-router-dom";
