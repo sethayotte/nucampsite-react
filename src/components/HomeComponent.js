@@ -4,6 +4,7 @@ import { Loading } from "./LoadingComponent";
 import { baseUrl } from "../shared/baseUrl";
 
 function RenderCard({ item, isLoading, errMess }) {
+  console.log(item, isLoading, errMess);
   if (isLoading) {
     return <Loading />;
   }
@@ -13,7 +14,6 @@ function RenderCard({ item, isLoading, errMess }) {
   return (
       
     <Card>
-        {console.log(baseUrl + item.image)}
       <CardImg src={baseUrl + item.image} alt={item.name} />
       <CardBody>
         <CardTitle>{item.name}</CardTitle>
@@ -24,18 +24,23 @@ function RenderCard({ item, isLoading, errMess }) {
 }
 
 function Home(props) {
+  console.log("this is my props", props)
   return (
     <div className="container">
       <div className="row">
         <div className="col-md m-1">
           <RenderCard
-            item={props.promotion}
-            isLoading={props.promotionLoading}
-            errMess={props.promotionErrMess}
+            item={props.campsite}
+            isLoading={props.campsitesLoading}
+            errMess={props.campsitesErrMess}
           />
         </div>
         <div className="col-md m-1">
-          <RenderCard item={props.promotion} />
+          <RenderCard item={props.promotion} 
+           isLoading={props.promotionLoading}
+           errMess={props.promotionErrMess}
+          />
+          
         </div>
         <div className="col-md m-1">
           <RenderCard item={props.partner} />
